@@ -31,6 +31,29 @@ header{
     display: inline-block;
     margin: 0 1%;
 }
+.activity-item .laber{
+    padding-bottom: 5px;
+}
+.activity-item h3{
+    padding: 5px 0
+}
 .activity-item img{
     width: 100%;
+}
+
+/* 商家推荐 */
+.classified-title{
+    padding: 2%;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.classified-title .classified-content{
+    padding: 0 10px;
+}
+.classified-title .classified-title-boder{
+    width: 30px;
+    height: 0;
+    margin-top: 15px;
+    border: 1px solid #999;
 }

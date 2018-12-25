@@ -21,7 +21,9 @@ class TabNav extends Component {
  
    render() {
      return (
-        // window.screen.height
+       <div>
+        <div style={{height:60}}></div>
+
        <div className="tab-bar-nav">
          <TabBar
            unselectedTintColor="#949494"
@@ -122,6 +124,8 @@ class TabNav extends Component {
              {this.renderContent('My')}
            </TabBar.Item>
          </TabBar>
+       </div>
+       
        </div>
      );
    }

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import TabNav from '../components/tabNav/tabBar';
 import GridNav from '../components/grid/grid';
+import CarouselNav from '../components/carouser/carouser';
+import TabExample from '../components/tabs';
+
 import './home.css'
 class home extends Component {
    render() {
@@ -14,17 +17,26 @@ class home extends Component {
             <div className="activity-logo">
                <div className="activity-item">
                      <h3>品质套餐</h3>
-                     <p>搭配齐全吃得好</p>
-                     <p>立即抢购</p>
+                     <div className="laber">搭配齐全吃得好</div>
+                     <p>立即抢购></p>
                      <img src="https://fuss10.elemecdn.com/d/d4/16ff085900d62b8d60fa7e9c6b65dpng.png?imageMogr/format/webp/thumbnail/!240x160r/gravity/Center/crop/240x160/" alt=""/>
                </div>
                <div className="activity-item">
                      <h3>品质套餐</h3>
-                     <p>搭配齐全吃得好</p>
-                     <p>立即抢购</p>
+                     <div className="laber">搭配齐全吃得好</div>
+                     <p>9999人正在抢购></p>
                      <img src="https://fuss10.elemecdn.com/d/d4/16ff085900d62b8d60fa7e9c6b65dpng.png?imageMogr/format/webp/thumbnail/!240x160r/gravity/Center/crop/240x160/" alt=""/>
                </div>
             </div>
+            <div  style={{padding:'2%'}}>
+               <CarouselNav/>
+            </div>
+            <div className="classified-title">
+               <div className="classified-title-boder"></div>
+               <div className="classified-content">商家推荐</div>
+               <div className="classified-title-boder"></div>
+            </div>
+            <TabExample/>
             <TabNav/>
          </div>
       );
