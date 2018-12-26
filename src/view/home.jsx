@@ -3,6 +3,8 @@ import TabNav from '../components/tabNav/tabBar';
 import GridNav from '../components/grid/grid';
 import CarouselNav from '../components/carouser/carouser';
 import TabExample from '../components/tabs';
+import ShopList from '../components/shopList/shopList';
+
 
 import './home.css'
 class home extends Component {
@@ -37,6 +39,7 @@ class home extends Component {
                <div className="classified-title-boder"></div>
             </div>
             <TabExample/>
+            <ShopList/>
             <TabNav/>
          </div>
       );
