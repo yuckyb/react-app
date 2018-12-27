@@ -14,7 +14,7 @@ const Root = () => (
             path="/"
             render={props => (
                <App>
-                  <Switch>
+                  <Switch >
                     <Route path="/" exact component={home} />
                     <Route path="/home" component={home} />
                     <Route path="/user" component={user} />
