@@ -3,7 +3,7 @@
    Test 主页
 */
 import React, { Component } from 'react';
-import TabNav from '../components/tabNav/tabBar';
+import TabNav from '../components/tabBar';
 class user extends Component {
    render() {
        return (

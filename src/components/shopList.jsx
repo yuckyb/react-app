@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './shoplist.css'
+import '../assets/css/shoplist.css'
 class ShopList extends Component {
     clickTab(id){
         console.log(id,'参数')

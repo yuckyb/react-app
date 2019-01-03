@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { TabBar } from "antd-mobile";
-import "./tabNav.css";
+import "../assets/css/tabNav.css";
 class TabNav extends Component {
   constructor(props) {
     super(props);
@@ -46,6 +46,7 @@ class TabNav extends Component {
               }
               selected={this.state.selectedTab === "blueTab"}
               onPress={() => {
+                console.log(this.props,'222222222')
                 this.setState({
                   selectedTab: "blueTab"
                 });

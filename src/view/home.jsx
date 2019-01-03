@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import TabNav from '../components/tabNav/tabBar';
-import GridNav from '../components/grid/grid';
-import CarouselNav from '../components/carouser/carouser';
+import GridNav from '../components/grid';
+import CarouselNav from '../components/carouser';
 import TabExample from '../components/tabs';
-import ShopList from '../components/shopList/shopList';
-
-
+import ShopList from '../components/shopList';
 import './home.css'
 class home extends Component {
    render() {
@@ -40,7 +37,6 @@ class home extends Component {
             </div>
             <TabExample/>
             <ShopList/>
-            <TabNav/>
          </div>
       );
    }
