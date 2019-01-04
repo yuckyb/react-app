@@ -2,12 +2,15 @@
    App 应用总容器
 */
 import React, { Component } from 'react';
-import TabNav from './components/tabBar';
+import TabListBar from './components/TabListBar';
+import './App.css'
 class App extends Component {
     render() {
-        // return <div>{this.props.children}</div>;
         return (
-            <TabNav/>
+            <div>
+                {/* <div>{this.props.children}</div> */}
+                <TabListBar/>
+            </div>
         )
     }
 }

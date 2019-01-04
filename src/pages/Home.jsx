@@ -4,7 +4,7 @@ import CarouselNav from '../components/carouser';
 import TabExample from '../components/tabs';
 import ShopList from '../components/shopList';
 import './home.css'
-class home extends Component {
+class Home extends Component {
    render() {
       return (
          <div id="home-container">
@@ -43,5 +43,5 @@ class home extends Component {
 
 }
 
-export default home;
+export default Home;
 
