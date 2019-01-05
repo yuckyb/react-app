@@ -14,7 +14,7 @@ class User extends Component {
                     </div>
                </div>
                 <div className='maininfo flex-aijc'>
-                    <p>
+                    {/* <p>
                         <icon/>
                         钱包
                     </p>
@@ -25,7 +25,7 @@ class User extends Component {
                     <p>
                         <icon/>
                         金币
-                    </p>
+                    </p> */}
                 </div>
                我的页面
            </div>
