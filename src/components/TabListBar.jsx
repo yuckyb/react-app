@@ -15,7 +15,7 @@ class TabListBar extends Component {
   }
   render() {
     return (
-      <div style= {{position: 'fixed', bottom: 0, width: '100%', height:'100%'}}>
+      <div style= {{position: 'fixed', bottom: 0, width: '100%', height:'100%',background:' #ffffff'}}>
         <TabBar
           unselectedTintColor="#949494"
           tintColor="#33A3F4"
