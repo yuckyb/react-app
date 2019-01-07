@@ -10,7 +10,7 @@ class TabListBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'yellowTab',
+      selectedTab: 'greenTab',
     };
   }
   render() {

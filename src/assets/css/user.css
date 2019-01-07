@@ -12,5 +12,24 @@
     background: #fff;
     margin: 0 30px;
 }
-.maininfo{
+.maininfo p{
+    width: 33.33%;
+    padding: 20px 0;
+    text-align: center;
+}
+.maininfo i{
+    font-size: 38px;
+    display: block
+}
+
+.profile-1reTe {
+    background: #fff;
+}
+.profile-1reTe i{
+    font-size: 28px;
+    color:#4e9ded;
+    vertical-align: middle
+}
+.profile-1reTe span{
+    vertical-align: middle
 }

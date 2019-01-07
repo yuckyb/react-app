@@ -16,8 +16,6 @@ class CarouselNav extends Component {
         <Carousel
           autoplay={true}
           infinite
-          // beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-          // afterChange={index => console.log('slide to', index)}
         >
           {this.state.data.map(val => (
             <a

@@ -13,7 +13,9 @@ body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4,p
  
 ol, ul ,li{list-style: none;} 
 img {border: 0; vertical-align:middle;} 
-
+button{
+  border: none;
+}
 .fl{
   float: left;
 }
