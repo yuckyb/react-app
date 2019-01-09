@@ -1,11 +1,20 @@
 import '../assets/css/user.css'
 import React, { Component } from 'react';
 import { List } from 'antd-mobile';
-class User extends Component {
+import {withRouter} from "react-router-dom";
+class My extends Component {
+    constructor(props){
+        super(props);
+        this.state={};
+    }
+    bandLogin=()=>{
+        console.log('去登录',)
+        this.props.history.push('/Login')
+        }
    render() {
        return (
            <div style={{background:'#f5f5f5',height:'100%'}}>
-               <div className="header">
+               <div className="header" onClick={this.bandLogin}>
                     <div className="imgUrl"></div>
                     <div className="login">
                         <p className="fs24">
@@ -64,5 +73,5 @@ class User extends Component {
        );
    }
 }
-export default User;
+export default withRouter(My);
 

@@ -3,7 +3,7 @@ import { TabBar } from "antd-mobile";
 
 import Home from "../pages/Home";
 import Order from "../pages/Order";
-import User from "../pages/User";
+import My from "../pages/My";
 import Find from "../pages/Find";
 
 class TabListBar extends Component {
@@ -109,7 +109,7 @@ class TabListBar extends Component {
               });
             }}
           >
-            <User/>
+            <My/>
           </TabBar.Item>
         </TabBar>
       </div>
