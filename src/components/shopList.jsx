@@ -4,6 +4,17 @@ class ShopList extends Component {
     clickTab(id){
         console.log(id,'参数')
     }
+    constructor(){
+        super();
+        this.state={
+            shopImgStyle:{
+                width: '20%',
+                border:' 1px solid #f5f5f5',
+                borderRadius:'4px',
+            }
+        }
+    }
+  
     state={
         list:[
             {title:'综合排序',id:0},
@@ -14,52 +25,47 @@ class ShopList extends Component {
     }
   render() {
     return (
-        <ul className='shop-list'>
-            <li>
-                <div className="shop-logo">
-                    <img src="https://fuss10.elemecdn.com/7/1b/f7ff8902cb535888b41365cee9889jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/" alt=""/>
+        <ul className="orderList" style={{padding:'0'}}>
+        <li className="pr">
+          <img style={this.state.shopImgStyle}
+            src="https://fuss10.elemecdn.com/7/1b/f7ff8902cb535888b41365cee9889jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/"
+            alt=""
+          />
+          <div className='clearfix'
+            style={{
+              width: "78%",
+              borderBottom: "1px solid #ddd"
+            }}
+          >
+            <div style={{ justifyContent: "space-between", display: "flex" }}>
+              <h4>肯德基宅急送（淮海中路店）</h4>
+              <span>⋮</span>
+            </div>
+            <div style={{ marginTop:'10px',color:'#666' }}>
+              <span>月售35>￥100/人</span><span className="fr" style={{border:'1px solid #51a1ea',color:'#51a1ea',padding:'0 3px',borderRadius:'3px'}}>准时达蜂鸟专送</span>
+            </div>
+            <div style={{ marginTop:'5px',color:'#666'  }}>
+              <span>起送￥20 远距离配送￥7.3</span><span className="fr">41分钟 3.1km</span>
+            </div>
+            <div style={{ padding:'10px 0 15px 0',color:'#666',justifyContent:'space-between',display:'flex' }}>
+                <div className="tags fs12">
+                    <span>简餐</span>
+                    <span>品质联盟</span>
+                    <span>地方小吃</span>
                 </div>
-                <div className="shopContet">
-                    <h3>淮南牛肉汤特色锅贴</h3>
-                    <div className="order-number">月售9999单</div>
-                    <div className="user-notice clearfix">
-                        <div className="user-notice-left fl">￥15起送|配送费￥0.8</div>
-                        <div className='user-notice-right fr'>950m|32分钟</div>
-                    </div>
-                    <div className="tags">
-                        <span>简餐</span>
-                        <span>品质联盟</span>
-                        <span>地方小吃</span>
-                    </div>
-                    <ul className="active-tag">
-                        <li><span>首</span>新用户下单立减50</li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div className="shop-logo">
-                    <img src="https://fuss10.elemecdn.com/7/1b/f7ff8902cb535888b41365cee9889jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/" alt=""/>
-                </div>
-                <div className="shopContet">
-                    <h3>淮南牛肉汤特色锅贴</h3>
-                    <div className="order-number">月售9999单</div>
-                    <div className="user-notice clearfix">
-                        <div className="user-notice-left fl">￥15起送|配送费￥0.8</div>
-                        <div className='user-notice-right fr'>950m|32分钟</div>
-                    </div>
-                    <div className="tags">
-                        <span>简餐</span>
-                        <span>品质联盟</span>
-                        <span>地方小吃</span>
-                    </div>
-                    <ul className="active-tag">
-                        <li><span>首</span>新用户下单立减50</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+                <span className="iconfont icon-down2"></span>
+            </div>
+          </div>
+          <div>
+        
+          </div>
+          {/* 不喜欢弹窗 */}
+          {/* <div className="hateBox pa">
+            <span>不喜欢</span>
+          </div> */}
+        </li>
+      </ul>
     );
   }
 }
-
 export default ShopList;

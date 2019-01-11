@@ -26,7 +26,7 @@ class CarouselNav extends Component {
               <img
                 src={val}
                 alt=""
-                style={{ width: '100%', verticalAlign: 'top' }}
+                style={{ width: '100%', verticalAlign: 'top' ,borderRadius:'5px'}}
                 onLoad={() => {
                   window.dispatchEvent(new Event('resize'));
                   this.setState({ imgHeight: 'auto' });

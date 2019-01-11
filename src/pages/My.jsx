@@ -10,7 +10,7 @@ class My extends Component {
     bandLogin=()=>{
         console.log('去登录',)
         this.props.history.push('/Login')
-        }
+    }
    render() {
        return (
            <div style={{background:'#f5f5f5',height:'100%'}}>

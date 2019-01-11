@@ -12,8 +12,10 @@ class Home extends Component {
             <div className="search-wrapper">
                <div className='search-value'>搜索饿了么商家、商户名称</div>
             </div>
-            <GridNav/>
-            <div className="activity-logo">
+            <div style={{paddingTop:'10px'}}>
+               <GridNav/>
+            </div>
+            {/* <div className="activity-logo">
                <div className="activity-item">
                      <h3>品质套餐</h3>
                      <div className="laber">搭配齐全吃得好</div>
@@ -26,15 +28,18 @@ class Home extends Component {
                      <p>9999人正在抢购></p>
                      <img src="https://fuss10.elemecdn.com/d/d4/16ff085900d62b8d60fa7e9c6b65dpng.png?imageMogr/format/webp/thumbnail/!240x160r/gravity/Center/crop/240x160/" alt=""/>
                </div>
-            </div>
-            <div  style={{padding:'2%'}}>
+            </div> */}
+            <div style={{padding:'1% 2%'}}>
                <CarouselNav/>
             </div>
-            <div className="classified-title">
+            <div style={{padding:'10px 2%',display:'flex',justifyContent:'space-between'}}>
+               <h3>商家推荐</h3>
+            </div>
+            {/* <div className="classified-title">
                <div className="classified-title-boder"></div>
                <div className="classified-content">商家推荐</div>
                <div className="classified-title-boder"></div>
-            </div>
+            </div> */}
             <TabExample/>
             <ShopList/>
          </div>

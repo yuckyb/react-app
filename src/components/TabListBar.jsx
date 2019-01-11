@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { TabBar } from "antd-mobile";
 
 import Home from "../pages/Home";
-import Order from "../pages/Order";
+import Order from "../pages/order/Order";
 import My from "../pages/My";
 import Find from "../pages/Find";
 
@@ -10,7 +10,7 @@ class TabListBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'greenTab',
+      selectedTab: 'index',
     };
   }
   render() {
@@ -36,10 +36,10 @@ class TabListBar extends Component {
               background: 'url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  21px 21px no-repeat' }}
             />
             }
-            selected={this.state.selectedTab === 'blueTab'}
+            selected={this.state.selectedTab === 'index'}
             onPress={() => {
               this.setState({
-                selectedTab: 'blueTab',
+                selectedTab: 'index',
               });
             }}
           >
