@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../assets/css/order.css"
 class Orderlist extends Component {
   render() {
     return (
@@ -218,7 +217,9 @@ class Orderlist extends Component {
                   style={{
                     marginLeft: "10px",
                     color: "#ea5a51",
-                    border: "1px solid #ea5a51"
+                    border: "1px solid #ea5a51",
+                    padding:'2px 3px',
+                    display:'block'
                   }}
                 >
                   评价得20金币
