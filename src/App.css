@@ -10,11 +10,7 @@ body{
 .tac{
   text-align: center;
 }
-.flex-aijc{
-  display: flex;
-  align-items: center;
-  justify-content:center
-}
+
 
 .fs36{
   font-size: 36px;
@@ -28,3 +24,58 @@ body{
 .fs12{
   font-size: 12px
 }
+/* 圆角 */
+.borderRadius3{
+  border-radius: 3px;
+}
+.borderRadius5{
+  border-radius: 5px;
+}
+.borderRadius{
+  border-radius: 50%;
+}
+/* flex 常用布局 */
+.flex-aijc{
+  display: flex;
+  align-items: center;
+  justify-content:center
+}
+.alignItems{
+  display: flex;
+  align-items: center;
+}
+.alignItemsStretch{
+  display: flex;
+  align-items:stretch;
+}
+.justifyContent{
+  display: flex;
+  justify-content:center
+}
+.justifySpaceBetween{
+  display: flex;
+  justify-content: space-between
+}
+.justifySpaceAround{
+  display: flex;
+  justify-content: space-around;
+}
+
+.alignSelfFlexStart{
+  display: flex;
+  align-self: flex-start;
+}
+.alignSelfFlexEnd{
+  display: flex;
+  align-self: flex-end;
+}
+
+.flexDirectionRowReverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flexDirectionColumn{
+  display: flex;
+  flex-direction: column
+}
+
